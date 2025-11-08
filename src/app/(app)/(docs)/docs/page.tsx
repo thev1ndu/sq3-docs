@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import type { Metadata } from "next";
 
 import { PostItem } from "@/features/blog/components/post-item";
-import { getAllPosts, getPostsByCategory } from "@/features/blog/data/posts";
+import { getPostsByCategory } from "@/features/blog/data/posts";
 
 export const metadata: Metadata = {
   title: "Docs",

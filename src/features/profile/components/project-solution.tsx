@@ -1,4 +1,8 @@
-import { Lightbulb, ChevronsDownUpIcon, ChevronsUpDownIcon } from "lucide-react";
+import {
+  ChevronsDownUpIcon,
+  ChevronsUpDownIcon,
+  Lightbulb,
+} from "lucide-react";
 
 import { Markdown } from "@/components/markdown";
 import {

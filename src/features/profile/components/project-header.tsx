@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { Prose } from "@/components/ui/typography";
 import { SITE_INFO } from "@/config/site";
 
