@@ -1,10 +1,11 @@
 import { AlertCircle, ChevronsDownUpIcon, ChevronsUpDownIcon } from "lucide-react";
+
+import { Markdown } from "@/components/markdown";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Markdown } from "@/components/markdown";
 import { Prose } from "@/components/ui/typography";
 import { PROJECT_DATA } from "@/features/profile/data/project";
 

@@ -22,8 +22,7 @@
     "capture": "tsx --tsconfig ./tsconfig.scripts.json ./src/scripts/capture.mts",
     "generate-libphonenumber-metadata": "libphonenumber-metadata-generator ./src/assets/libphonenumber.metadata.json --countries VN --extended",
     "upgrade:next": "npx @next/codemod@latest upgrade latest",
-    "upgrade:tailwind": "npx @tailwindcss/upgrade@latest",
-    "prepare": "husky"
+    "upgrade:tailwind": "npx @tailwindcss/upgrade@latest"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
@@ -70,7 +69,6 @@
     "eslint-plugin-boundaries": "^5.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "gray-matter": "^4.0.3",
-    "husky": "^9.1.7",
     "libphonenumber-metadata-generator": "^1.1.0",
     "lint-staged": "^16.0.0",
     "prettier": "^3.5.3",

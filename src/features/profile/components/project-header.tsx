@@ -1,7 +1,7 @@
-import { SITE_INFO } from "@/config/site";
-import { Prose } from "@/components/ui/typography";
-import { Icons } from "@/components/icons";
 import Image from "next/image";
+
+import { Prose } from "@/components/ui/typography";
+import { SITE_INFO } from "@/config/site";
 
 import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel";
 

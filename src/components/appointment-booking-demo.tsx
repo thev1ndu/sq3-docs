@@ -1,21 +1,20 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   Calendar,
+  CheckCircle,
   Clock,
-  User,
   Mail,
   Phone,
-  CheckCircle,
-  MessageSquare,
   Sparkles,
-  Zap,
+  User,
 } from "lucide-react";
+import { AnimatePresence,motion } from "motion/react";
+import { useState } from "react";
+
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 interface BookingStep {

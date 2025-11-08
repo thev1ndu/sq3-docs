@@ -1,20 +1,20 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
+  AlertCircle,
   Brain,
+  CheckCircle,
+  Clock,
   MessageSquare,
   Target,
   Zap,
-  CheckCircle,
-  Clock,
-  AlertCircle,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
+
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface Scenario {
   id: number;
@@ -417,8 +417,8 @@ export function IntentClassificationDemo() {
                 </div>
                 <h3 className="mb-2 font-semibold">Intent Classification</h3>
                 <p className="text-sm text-muted-foreground">
-                  Click "Analyze Intent" to see AI-powered classification
-                  results
+                  Click &quot;Analyze Intent&quot; to see AI-powered
+                  classification results
                 </p>
               </div>
             </CardContent>

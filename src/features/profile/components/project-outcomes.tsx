@@ -1,4 +1,5 @@
-import { TrendingUp, ChevronsDownUpIcon, ChevronsUpDownIcon } from "lucide-react";
+import { ChevronsDownUpIcon, ChevronsUpDownIcon,TrendingUp } from "lucide-react";
+
 import {
   Collapsible,
   CollapsibleContent,

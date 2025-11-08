@@ -1,22 +1,23 @@
 "use client";
 
+import {
+  CheckCircle,
+  Clock,
+  Facebook,
+  Globe,
+  Inbox,
+  Instagram,
+  Languages,
+  MessageSquare,
+  X,
+  Zap,
+} from "lucide-react";
+import { AnimatePresence,motion } from "motion/react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import {
-  Inbox,
-  Facebook,
-  Instagram,
-  Globe,
-  MessageSquare,
-  Clock,
-  Languages,
-  Zap,
-  CheckCircle,
-  X,
-} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Message {
@@ -298,7 +299,7 @@ export function UnifiedInboxDemo() {
                   <div className="flex flex-col items-center justify-center py-12 text-center">
                     <Inbox className="size-12 text-muted-foreground/50 mb-3" />
                     <p className="text-sm text-muted-foreground">
-                      Click "Auto Play" to load messages
+                      Click &quot;Auto Play&quot; to load messages
                     </p>
                   </div>
                 )}

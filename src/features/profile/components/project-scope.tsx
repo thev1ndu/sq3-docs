@@ -1,17 +1,18 @@
 import {
+  Brain,
   ChevronsDownUpIcon,
   ChevronsUpDownIcon,
-  MessageSquare,
-  Brain,
-  Target,
   Mail,
+  MessageSquare,
+  Target,
 } from "lucide-react";
+
+import { Icons } from "@/components/icons";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Icons } from "@/components/icons";
 import { PROJECT_DATA } from "@/features/profile/data/project";
 
 import { Panel, PanelHeader, PanelTitle } from "./panel";
