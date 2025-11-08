@@ -1,4 +1,5 @@
 import {
+  BarChart3,
   Brain,
   ChevronsDownUpIcon,
   ChevronsUpDownIcon,
@@ -24,6 +25,7 @@ const moduleIcons = {
   "intent-classification": Target,
   "email-marketing": Mail,
   "sentiment-analyzer": Heart,
+  "analytics": BarChart3,
 };
 
 export function ProjectScope() {

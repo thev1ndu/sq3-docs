@@ -5,7 +5,7 @@ export const SITE_INFO = {
   url: process.env.APP_URL || "https://next.sq3.uk",
   ogImage: "/og-image.png",
   description:
-    "Unified, AI-driven SaaS platform that simplifies customer engagement, automates responses, and enhances marketing outcomes across Facebook, Instagram, and websites for Sri Lankan SMEs.",
+    "SQ3 is a unified platform that brings all your customer messages from Facebook, Instagram, and your website into one place, and helps you respond to them faster and smarter. Designed specifically for Sri Lankan SMEs.",
   keywords: [
     "SQ3",
     "chatbot",

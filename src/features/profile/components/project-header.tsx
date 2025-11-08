@@ -12,7 +12,9 @@ export function ProjectHeader() {
             {/* <Icons.project className="size-5" /> */}
             {/* <Image src="/Q.svg" alt="SQ3" width={64} height={64} /> */}
           </div>
-          <PanelTitle></PanelTitle>
+          <PanelTitle>
+            {/* SQ3 - Smart Business Solution for Sri Lankan SMEs */}
+          </PanelTitle>
         </div>
       </PanelHeader>
       <PanelContent>
