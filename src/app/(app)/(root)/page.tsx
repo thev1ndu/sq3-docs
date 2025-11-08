@@ -1,16 +1,12 @@
-import dayjs from "dayjs";
-import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
+import type { WebPage, WithContext } from "schema-dts";
 
-import { About } from "@/features/profile/components/about";
-import { Blog } from "@/features/profile/components/blog";
-import { Certifications } from "@/features/profile/components/certifications";
-import { Experiences } from "@/features/profile/components/experiences";
-import { Overview } from "@/features/profile/components/overview";
-import { ProfileHeader } from "@/features/profile/components/profile-header";
-import { Projects } from "@/features/profile/components/projects";
-import { SocialLinks } from "@/features/profile/components/social-links";
-import { Volunteering } from "@/features/profile/components/volunteering";
-import { USER } from "@/features/profile/data/user";
+import { ProjectHeader } from "@/features/profile/components/project-header";
+import { ProjectIntroduction } from "@/features/profile/components/project-introduction";
+import { ProjectProblem } from "@/features/profile/components/project-problem";
+import { ProjectObjectives } from "@/features/profile/components/project-objectives";
+import { ProjectScope } from "@/features/profile/components/project-scope";
+import { ProjectOutcomes } from "@/features/profile/components/project-outcomes";
+import { SITE_INFO } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 export default function Page() {
@@ -24,49 +20,35 @@ export default function Page() {
       />
 
       <div className="mx-auto md:max-w-3xl">
-        <ProfileHeader />
+        <ProjectHeader />
         <Separator />
 
-        <Overview />
+        <ProjectIntroduction />
         <Separator />
 
-        <SocialLinks />
+        <ProjectProblem />
         <Separator />
 
-        <About />
+        <ProjectObjectives />
         <Separator />
 
-        <Blog />
+        <ProjectScope />
         <Separator />
 
-        <Experiences />
-        <Separator />
-
-        <Projects />
-        <Separator />
-
-        <Volunteering />
-        <Separator />
-
-        <Certifications />
+        <ProjectOutcomes />
         <Separator />
       </div>
     </>
   );
 }
 
-function getPageJsonLd(): WithContext<PageSchema> {
+function getPageJsonLd(): WithContext<WebPage> {
   return {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    dateCreated: dayjs(USER.dateCreated).toISOString(),
-    dateModified: dayjs().toISOString(),
-    mainEntity: {
-      "@type": "Person",
-      name: USER.displayName,
-      identifier: USER.username,
-      image: USER.avatar,
-    },
+    "@type": "WebPage",
+    name: SITE_INFO.name,
+    description: SITE_INFO.description,
+    url: SITE_INFO.url,
   };
 }
 

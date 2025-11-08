@@ -1,12 +1,23 @@
-import { USER } from "@/features/profile/data/user";
 import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
-  name: USER.displayName,
-  url: process.env.APP_URL || "https://thevinduw.de",
-  ogImage: USER.ogImage,
-  description: USER.bio,
-  keywords: USER.keywords,
+  name: "SQ3",
+  url: process.env.APP_URL || "https://next.sq3.uk",
+  ogImage: "/og-image.png",
+  description:
+    "Unified, AI-driven SaaS platform that simplifies customer engagement, automates responses, and enhances marketing outcomes within the Meta ecosystem for Sri Lankan SMEs.",
+  keywords: [
+    "SQ3",
+    "chatbot",
+    "SaaS",
+    "Facebook",
+    "Instagram",
+    "customer engagement",
+    "AI",
+    "Sri Lanka",
+    "SME",
+    "marketing automation",
+  ],
 };
 
 export const META_THEME_COLORS = {
@@ -16,17 +27,17 @@ export const META_THEME_COLORS = {
 
 export const MAIN_NAV: NavItem[] = [
   {
-    title: "Portfolio",
+    title: "Project",
     href: "/",
   },
   {
-    title: "Blog",
-    href: "/blog",
+    title: "Docs",
+    href: "/docs",
   },
 ];
 
 export const UTM_PARAMS = {
-  utm_source: "thevinduw.de",
-  utm_medium: "portfolio_website",
+  utm_source: "sq3.thevinduw.de",
+  utm_medium: "project_website",
   utm_campaign: "referral",
 };

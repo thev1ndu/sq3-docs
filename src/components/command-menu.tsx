@@ -35,35 +35,35 @@ type CommandLinkItem = {
 
 const MENU_LINKS: CommandLinkItem[] = [
   {
-    title: "Portfolio",
+    title: "Project",
     href: "/",
   },
   {
-    title: "Blog",
-    href: "/blog",
+    title: "Docs",
+    href: "/docs",
   },
 ];
 
-const DAIFOLIO_LINKS: CommandLinkItem[] = [
+const PROJECT_LINKS: CommandLinkItem[] = [
   {
-    title: "Passion & Journey",
-    href: "/#about",
+    title: "Introduction",
+    href: "/#introduction",
   },
   {
-    title: "Professional Journey",
-    href: "/#experience",
+    title: "Problem Statement",
+    href: "/#problem",
   },
   {
-    title: "Projects",
-    href: "/#projects",
+    title: "Objectives",
+    href: "/#objectives",
   },
   {
-    title: "Volunteering",
-    href: "/#volunteering",
+    title: "Scope",
+    href: "/#scope",
   },
   {
-    title: "Certifications",
-    href: "/#certs",
+    title: "Expected Outcomes",
+    href: "/#outcomes",
   },
 ];
 
@@ -178,19 +178,21 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
           <CommandSeparator />
 
           <CommandLinkGroup
-            heading="Portfolio"
-            links={DAIFOLIO_LINKS}
+            heading="Project Sections"
+            links={PROJECT_LINKS}
             onLinkSelect={handleOpenLink}
           />
 
           <CommandSeparator />
 
+          {blogLinks.length > 0 && (
           <CommandLinkGroup
-            heading="Blog"
+              heading="Docs"
             links={blogLinks}
             // fallbackIcon={TextIcon}
             onLinkSelect={handleOpenLink}
           />
+          )}
 
           <CommandSeparator />
 
@@ -339,7 +341,7 @@ function postToCommandLinkItem(post: Post): CommandLinkItem {
 
   return {
     title: post.metadata.title,
-    href: isComponent ? `/components/${post.slug}` : `/blog/${post.slug}`,
+    href: isComponent ? `/components/${post.slug}` : `/docs/${post.slug}`,
     keywords: isComponent ? ["component"] : undefined,
   };
 }

@@ -119,7 +119,7 @@ export default async function Page({
         }}
       />
 
-      <PostKeyboardShortcuts basePath="/blog" previous={previous} next={next} />
+      <PostKeyboardShortcuts basePath="/docs" previous={previous} next={next} />
 
       <div className="flex items-center justify-between p-2 pl-4">
         <Button
@@ -127,16 +127,16 @@ export default async function Page({
           variant="link"
           asChild
         >
-          <Link href="/blog">
+          <Link href="/docs">
             <ArrowLeftIcon />
-            Blog
+            Docs
           </Link>
         </Button>
 
         <div className="flex items-center gap-2">
           {previous && (
             <Button variant="secondary" size="icon:sm" asChild>
-              <Link href={`/blog/${previous.slug}`}>
+              <Link href={`/docs/${previous.slug}`}>
                 <ArrowLeftIcon />
                 <span className="sr-only">Previous</span>
               </Link>
@@ -145,7 +145,7 @@ export default async function Page({
 
           {next && (
             <Button variant="secondary" size="icon:sm" asChild>
-              <Link href={`/blog/${next.slug}`}>
+              <Link href={`/docs/${next.slug}`}>
                 <span className="sr-only">Next</span>
                 <ArrowRightIcon />
               </Link>
@@ -185,5 +185,5 @@ export default async function Page({
 
 function getPostUrl(post: Post) {
   const isComponent = post.metadata.category === "components";
-  return isComponent ? `/components/${post.slug}` : `/blog/${post.slug}`;
+  return isComponent ? `/components/${post.slug}` : `/docs/${post.slug}`;
 }

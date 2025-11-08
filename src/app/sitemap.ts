@@ -6,11 +6,11 @@ import { getAllPosts } from "@/features/blog/data/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts().map((post) => ({
-    url: `${SITE_INFO.url}/blog/${post.slug}`,
+    url: `${SITE_INFO.url}/docs/${post.slug}`,
     lastModified: dayjs(post.metadata.updatedAt).toISOString(),
   }));
 
-  const routes = ["", "/blog"].map((route) => ({
+  const routes = ["", "/docs"].map((route) => ({
     url: `${SITE_INFO.url}${route}`,
     lastModified: dayjs().toISOString(),
   }));

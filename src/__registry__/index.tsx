@@ -160,4 +160,44 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(() => import("@/registry/examples/work-experience-demo.tsx")),
   },
+  "intent-classification-demo": {
+    name: "intent-classification-demo",
+    description: "Interactive demo of AI-powered intent classification system",
+    type: "registry:example",
+    files: [{
+      path: "src/components/intent-classification-demo.tsx",
+      type: "registry:example",
+    }],
+    component: React.lazy(() => import("@/components/intent-classification-demo").then(mod => ({ default: mod.IntentClassificationDemo }))),
+  },
+  "marketing-segmentation-demo": {
+    name: "marketing-segmentation-demo",
+    description: "Interactive demo of customer segmentation and marketing campaign system",
+    type: "registry:example",
+    files: [{
+      path: "src/components/marketing-segmentation-demo.tsx",
+      type: "registry:example",
+    }],
+    component: React.lazy(() => import("@/components/marketing-segmentation-demo").then(mod => ({ default: mod.MarketingSegmentationDemo }))),
+  },
+  "unified-inbox-demo": {
+    name: "unified-inbox-demo",
+    description: "Interactive demo of unified inbox system consolidating messages from multiple channels",
+    type: "registry:example",
+    files: [{
+      path: "src/components/unified-inbox-demo.tsx",
+      type: "registry:example",
+    }],
+    component: React.lazy(() => import("@/components/unified-inbox-demo").then(mod => ({ default: mod.UnifiedInboxDemo }))),
+  },
+  "appointment-booking-demo": {
+    name: "appointment-booking-demo",
+    description: "Interactive demo of AI-powered appointment booking system with automated scheduling",
+    type: "registry:example",
+    files: [{
+      path: "src/components/appointment-booking-demo.tsx",
+      type: "registry:example",
+    }],
+    component: React.lazy(() => import("@/components/appointment-booking-demo").then(mod => ({ default: mod.AppointmentBookingDemo }))),
+  },
 }

@@ -6,7 +6,6 @@ import type { WebSite, WithContext } from "schema-dts";
 
 import { Providers } from "@/components/providers";
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site";
-import { USER } from "@/features/profile/data/user";
 import { fontMono, fontSans } from "@/lib/fonts";
 
 function getWebSiteJsonLd(): WithContext<WebSite> {
@@ -15,7 +14,7 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
     "@type": "WebSite",
     name: SITE_INFO.name,
     url: SITE_INFO.url,
-    alternateName: [USER.username],
+    alternateName: ["SQ3"],
   };
 }
 
@@ -41,10 +40,10 @@ export const metadata: Metadata = {
   },
   title: {
     template: `%s – ${SITE_INFO.name}`,
-    default: `${USER.displayName} – ${USER.jobTitle}`,
+    default: SITE_INFO.name,
   },
   description: SITE_INFO.description,
-  keywords: SITE_INFO.keywords,
+  keywords: SITE_INFO.keywords.join(", "),
   authors: [
     {
       name: "thevinduw",
@@ -55,11 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
-    type: "profile",
-    firstName: USER.firstName,
-    lastName: USER.lastName,
-    username: USER.username,
-    gender: USER.gender,
+    type: "website",
     images: [
       {
         url: SITE_INFO.ogImage,
@@ -71,25 +66,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@iamncdai", // Twitter username
+    creator: "@thevinduw",
     images: [SITE_INFO.ogImage],
   },
   icons: {
-    icon: [
-      {
-        url: "https://assets.thevinduw.de/favicon-32x32.png",
-        sizes: "any",
-      },
-      {
-        url: "https://assets.thevinduw.de/favicon-32x32.png",
-        type: "any",
-      },
-    ],
-    apple: {
-      url: "https://assets.thevinduw.de/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
+    icon: "/Q.png",
+    apple: "/Q.png",
   },
 };
 
