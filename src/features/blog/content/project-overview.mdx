@@ -1,0 +1,308 @@
+---
+title: SQ3 Project Overview
+description: Comprehensive overview of the SQ3 platform architecture, stakeholders, modules, and data flows for a unified customer engagement solution for Sri Lankan SMEs.
+createdAt: 2025-11-08
+updatedAt: 2025-11-08
+category: project
+---
+
+## Overview
+
+SQ3 is a unified, AI-driven SaaS platform designed specifically for Sri Lankan Small and Medium Enterprises (SMEs) to manage customer communications across Facebook, Instagram, and websites. The platform consolidates multiple communication channels into a single intelligent inbox, automates responses through AI-powered chatbots, analyzes customer intent and sentiment, and enables data-driven marketing campaigns.
+
+With website embedding capabilities, SQ3 seamlessly integrates with existing websites through an embeddable widget, allowing businesses to capture customer inquiries directly from their websites while managing all communications in one unified platform.
+
+This document provides a comprehensive overview of the SQ3 platform, including its architecture, stakeholders, core modules, data flows, and expected outcomes.
+
+## System Components
+
+### Stakeholders
+
+#### Customers
+
+- **Role**: End users who interact with businesses through social media
+- **Channels**: Facebook and Instagram
+- **Languages**: Sinhala and English
+- **Interactions**: Send messages, ask questions, make inquiries, provide feedback
+
+#### Small & Medium Enterprises (SMEs)
+
+- **Role**: Business owners and operators using the SQ3 platform
+- **Needs**: Efficient customer communication, automation, marketing tools
+- **Benefits**: Unified inbox, automated responses, customer insights, marketing campaigns
+
+### Communication Channels
+
+#### Facebook
+
+- **Integration**: Facebook Graph API
+- **Message Types**: Direct messages, comments, page interactions
+- **Real-time Sync**: Messages synchronized in real-time to unified inbox
+
+#### Instagram
+
+- **Integration**: Instagram Basic Display API
+- **Message Types**: Direct messages, comments, story interactions
+- **Real-time Sync**: Messages synchronized in real-time to unified inbox
+
+#### Website
+
+- **Integration**: Website embedding widget and API integration
+- **Message Types**: Contact form submissions, live chat messages, embedded widget conversations
+- **Embedding**: Easy-to-integrate widget that can be embedded on any website
+- **Real-time Sync**: Messages synchronized in real-time to unified inbox
+- **Customization**: Customizable widget design to match website branding
+
+### Platform Modules
+
+#### 1. Social Integration
+
+- **Purpose**: Unified inbox for Facebook, Instagram, and website communications
+- **Features**:
+  - Consolidated message view across all channels
+  - Real-time synchronization
+  - Channel identification
+  - Status tracking
+  - Website embedding widget for easy integration
+  - Contact form and live chat integration
+- **Data Flow**: Receives messages from Facebook, Instagram, and website channels
+
+#### 2. Knowledge Base + FAQ
+
+- **Purpose**: AI-powered automated responses
+- **Features**:
+  - Repository of frequently asked questions
+  - Dynamic response generation
+  - Multilingual support (Sinhala, English)
+  - Continuous learning from interactions
+- **Data Flow**: Processes messages from unified inbox, provides automated responses
+
+#### 3. Intent Classification
+
+- **Purpose**: Categorize messages by intent
+- **Features**:
+  - Natural Language Processing (NLP)
+  - Primary and secondary intent detection
+  - Confidence scoring
+  - Urgency assessment
+- **Data Flow**: Analyzes messages to classify intent, enables contextual automation
+
+#### 4. Customer Sentiment Analyzer
+
+- **Purpose**: Detect and analyze customer sentiment
+- **Features**:
+  - Real-time sentiment detection (positive, negative, neutral)
+  - Emotion identification
+  - Priority alerts for negative sentiments
+  - Sentiment scoring and trends
+- **Data Flow**: Analyzes message sentiment, triggers priority alerts, feeds analytics
+
+#### 5. Email Marketing & Customer Segmentation
+
+- **Purpose**: Targeted marketing campaigns
+- **Features**:
+  - Customer segmentation based on behavior
+  - Targeted email campaigns
+  - Performance metrics (open rates, click-throughs, conversions)
+  - Campaign management
+- **Data Flow**: Uses intent and sentiment data for segmentation, generates campaigns
+
+#### 6. Analytics Dashboard
+
+- **Purpose**: Insights and metrics
+- **Features**:
+  - Sentiment trends
+  - Intent distribution
+  - Response times
+  - Customer satisfaction metrics
+  - Campaign performance
+- **Data Flow**: Aggregates data from all modules, provides insights to SMEs
+
+### Data Storage & Analytics
+
+- **Purpose**: Centralized data storage and processing
+- **Functions**:
+  - Store customer interactions
+  - Process analytics
+  - Generate reports
+  - Maintain historical data
+- **Integration**: Connected to all platform modules
+
+## Data Flow Architecture
+
+### Input Flow
+
+1. **Customers** send messages through **Facebook**, **Instagram**, or **Website** (via embedding widget or contact forms)
+2. Messages are received by **Social Integration** module
+3. Messages are processed in real-time and displayed in unified inbox
+
+### Processing Flow
+
+1. **Social Integration** forwards messages to **Knowledge Base** for automated responses
+2. Messages are analyzed by **Intent Classification** to determine intent
+3. Messages are analyzed by **Sentiment Analyzer** to detect sentiment
+4. Intent and sentiment data flow to **Email Marketing** for segmentation
+5. All data flows to **Analytics Dashboard** for insights
+
+### Output Flow
+
+1. **Analytics Dashboard** provides insights and metrics to **SMEs**
+2. Automated responses are sent back to customers through **Social Integration**
+3. Marketing campaigns are executed through **Email Marketing**
+4. Priority alerts are generated for negative sentiments
+
+## Key Interactions
+
+### Customer to Platform
+
+- Customers send messages via Facebook, Instagram, or website (embedding widget/contact forms)
+- Messages are automatically synchronized to unified inbox
+- Automated responses are sent based on knowledge base and intent
+- Website widget provides seamless in-page chat experience
+
+### Platform to Customer
+
+- Automated responses from knowledge base
+- Human responses from SMEs
+- Marketing campaigns via email
+- Real-time message synchronization
+
+### Platform to SME
+
+- Unified inbox for all customer messages
+- Analytics and insights dashboard
+- Priority alerts for urgent issues
+- Marketing campaign management
+- Customer segmentation data
+
+### SME to Platform
+
+- Manual responses to customer messages
+- Knowledge base updates
+- Marketing campaign configuration
+- Analytics dashboard interactions
+
+## System Benefits
+
+### For Customers
+
+- **Faster Responses**: Automated responses for common inquiries
+- **Consistent Experience**: Unified experience across Facebook and Instagram
+- **Multilingual Support**: Support in Sinhala and English
+- **Better Service**: Priority handling of urgent issues
+
+### For SMEs
+
+- **Unified Inbox**: All messages in one place
+- **Automation**: Reduced manual work through AI-powered responses
+- **Insights**: Data-driven insights into customer behavior
+- **Marketing Tools**: Targeted campaigns based on customer segmentation
+- **Efficiency**: Faster response times and improved productivity
+
+## Integration Points
+
+### External Integrations
+
+- **Facebook Graph API**: For Facebook message synchronization
+- **Instagram Basic Display API**: For Instagram message synchronization
+- **Website Embedding**: Embeddable widget and API for website integration
+- **Contact Form Integration**: Integration with website contact forms
+- **Email Service Providers**: For marketing campaign delivery
+- **Translation APIs**: For multilingual support
+
+### Internal Integrations
+
+- **Unified Inbox ↔ Knowledge Base**: Automated responses
+- **Unified Inbox ↔ Intent Classification**: Intent detection
+- **Unified Inbox ↔ Sentiment Analyzer**: Sentiment analysis
+- **Intent Classification ↔ Email Marketing**: Customer segmentation
+- **Sentiment Analyzer ↔ Analytics**: Sentiment trends
+- **All Modules ↔ Analytics Dashboard**: Data aggregation
+
+## Technical Architecture
+
+### Real-Time Processing
+
+- Messages are processed in real-time as they arrive
+- Sub-second response times for automated replies
+- Real-time synchronization across all channels
+
+### Scalability
+
+- Cloud-based architecture for scalability
+- Horizontal scaling for high message volumes
+- Efficient data processing and storage
+
+### Security
+
+- Secure API integrations with Facebook and Instagram
+- Data encryption for customer information
+- Access control for SME accounts
+
+### Reliability
+
+- Redundant systems for high availability
+- Backup and recovery mechanisms
+- Monitoring and alerting systems
+
+## Expected Outcomes
+
+### Operational Efficiency
+
+- **70% reduction** in manual message handling
+- **60% reduction** in response time
+- **Unified communication hub** for Facebook, Instagram, and website interactions
+- **Seamless website integration** through embedding widget
+
+### Customer Satisfaction
+
+- **Faster response times** through automation
+- **Proactive customer service** through sentiment analysis
+- **Improved customer retention** through better engagement
+
+### Business Growth
+
+- **Data-driven marketing** through customer segmentation
+- **Better insights** into customer behavior
+- **Increased conversion rates** through targeted campaigns
+
+## Use Cases
+
+### Customer Support
+
+SMEs can handle customer inquiries from all channels in one place, with automated responses for common questions and priority handling for urgent issues.
+
+### Marketing Campaigns
+
+SMEs can create targeted email campaigns based on customer segmentation, intent classification, and sentiment analysis.
+
+### Customer Insights
+
+SMEs can gain insights into customer behavior, sentiment trends, and satisfaction metrics through the analytics dashboard.
+
+### Proactive Service
+
+SMEs can identify at-risk customers through negative sentiment detection and respond proactively to prevent churn.
+
+## Future Enhancements
+
+### Planned Features
+
+- WhatsApp integration
+- Predictive analytics
+- Advanced automation builders
+- Multi-language expansion
+- Voice message support
+
+### Scalability Improvements
+
+- Enhanced real-time processing
+- Improved data storage and retrieval
+- Advanced analytics capabilities
+- Machine learning model improvements
+
+## Conclusion
+
+The SQ3 platform provides a comprehensive solution for Sri Lankan SMEs to manage customer communications across Facebook, Instagram, and websites. Through unified inbox, website embedding, AI-powered automation, intent classification, sentiment analysis, and marketing tools, the platform enables SMEs to provide better customer service, gain valuable insights, and grow their business efficiently.
+
+All these components work together to create a seamless, intelligent customer engagement system that benefits both customers and businesses. The platform's modular architecture ensures scalability, reliability, and continuous improvement, making it an essential tool for SMEs looking to enhance their customer engagement and drive business growth.

@@ -7,6 +7,7 @@ import { ProjectObjectives } from "@/features/profile/components/project-objecti
 import { ProjectOutcomes } from "@/features/profile/components/project-outcomes";
 import { ProjectProblem } from "@/features/profile/components/project-problem";
 import { ProjectScope } from "@/features/profile/components/project-scope";
+import { ProjectSolution } from "@/features/profile/components/project-solution";
 import { cn } from "@/lib/utils";
 
 export default function Page() {
@@ -27,6 +28,9 @@ export default function Page() {
         <Separator />
 
         <ProjectProblem />
+        <Separator />
+
+        <ProjectSolution />
         <Separator />
 
         <ProjectObjectives />

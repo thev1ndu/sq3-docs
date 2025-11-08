@@ -1,0 +1,672 @@
+---
+title: Development Breakdown
+description: Comprehensive breakdown of SQ3 platform development phases, module dependencies, and development roadmap showing how features are built incrementally.
+createdAt: 2025-11-08
+updatedAt: 2025-11-08
+category: project
+---
+
+## Overview
+
+The SQ3 platform development follows a phased, incremental approach that builds foundational features first, then adds advanced capabilities on top. This document outlines the development breakdown, showing how each module is developed in a logical sequence that ensures dependencies are met and the platform evolves from a basic unified inbox to a comprehensive AI-powered customer engagement system.
+
+## Development Philosophy
+
+### Incremental Development
+
+The development follows an incremental approach where:
+
+- **Foundation First**: Core infrastructure and basic features are built first
+- **Build on Success**: Advanced features are built on top of proven foundations
+- **Iterative Improvement**: Each phase enhances and extends previous capabilities
+- **Dependency Management**: Features are developed in order of their dependencies
+- **User Value**: Each phase delivers value to users while building toward the complete solution
+
+### Modular Architecture
+
+The platform is designed with a modular architecture that allows:
+
+- **Independent Development**: Modules can be developed and tested independently
+- **Incremental Deployment**: Features can be deployed as they become ready
+- **Scalable Growth**: System can grow without major refactoring
+- **Flexible Integration**: New modules integrate seamlessly with existing ones
+
+## Development Phases
+
+### Phase 1: Foundation - Unified Inbox & Integrations
+
+**Objective**: Establish the core unified inbox system with basic integrations
+
+#### 1.1 Unified Inbox Core
+
+**Development Focus:**
+- Basic inbox interface and message display
+- Message storage and retrieval system
+- Real-time message synchronization
+- Basic channel identification
+- Message status tracking (unread, read, replied)
+
+**Key Features:**
+- Unified message view
+- Chronological message ordering
+- Channel badges and identification
+- Basic message filtering
+- Message search functionality
+
+**Technical Implementation:**
+- Database schema for message storage
+- Real-time synchronization infrastructure
+- WebSocket connections for live updates
+- RESTful API for message management
+- Frontend inbox interface
+
+#### 1.2 Facebook Integration
+
+**Development Focus:**
+- Facebook Graph API integration
+- Facebook page message retrieval
+- Facebook comment monitoring
+- Real-time message sync from Facebook
+- Facebook authentication and permissions
+
+**Key Features:**
+- Connect Facebook pages
+- Receive Facebook messages
+- Receive Facebook comments
+- Real-time Facebook message sync
+- Facebook message replies
+
+**Technical Implementation:**
+- Facebook Graph API client
+- OAuth 2.0 authentication flow
+- Webhook setup for real-time updates
+- Message parsing and normalization
+- Error handling and retry logic
+
+#### 1.3 Instagram Integration
+
+**Development Focus:**
+- Instagram Basic Display API integration
+- Instagram direct message retrieval
+- Instagram comment monitoring
+- Real-time message sync from Instagram
+- Instagram authentication and permissions
+
+**Key Features:**
+- Connect Instagram business accounts
+- Receive Instagram direct messages
+- Receive Instagram comments
+- Real-time Instagram message sync
+- Instagram message replies
+
+**Technical Implementation:**
+- Instagram Basic Display API client
+- OAuth 2.0 authentication flow
+- Webhook setup for real-time updates
+- Message parsing and normalization
+- Error handling and retry logic
+
+#### 1.4 Website Integration
+
+**Development Focus:**
+- Website embedding widget development
+- Contact form integration API
+- Website chat widget
+- Real-time website message sync
+- Website widget customization
+
+**Key Features:**
+- Embeddable JavaScript widget
+- Live chat interface on websites
+- Contact form integration
+- Customizable widget design
+- Real-time message delivery
+
+**Technical Implementation:**
+- JavaScript widget library
+- RESTful API for widget communication
+- WebSocket for real-time chat
+- Contact form webhook endpoints
+- Widget customization system
+
+**Phase 1 Deliverables:**
+- Fully functional unified inbox
+- Facebook message integration
+- Instagram message integration
+- Website embedding widget
+- Real-time synchronization across all channels
+- Basic message management interface
+
+### Phase 2: Automation - Knowledge Base & FAQ
+
+**Objective**: Add AI-powered automation for common inquiries
+
+#### 2.1 Knowledge Base System
+
+**Development Focus:**
+- Knowledge base data structure
+- FAQ repository management
+- Knowledge base content management system
+- Content organization and categorization
+- Multi-language support (Sinhala, English)
+
+**Key Features:**
+- FAQ repository
+- Content management interface
+- Category organization
+- Search functionality
+- Multi-language content
+
+**Technical Implementation:**
+- Database schema for knowledge base
+- Content management API
+- Search indexing system
+- Multi-language content storage
+- Content versioning system
+
+#### 2.2 AI Query Recognition
+
+**Development Focus:**
+- Natural Language Processing (NLP) integration
+- Query matching algorithms
+- Intent recognition models
+- Confidence scoring
+- Multi-language query processing
+
+**Key Features:**
+- AI-powered query recognition
+- Semantic search capabilities
+- Intent matching
+- Confidence scoring
+- Multi-language support
+
+**Technical Implementation:**
+- NLP model integration
+- Query preprocessing
+- Semantic matching algorithms
+- Machine learning models
+- Language detection and processing
+
+#### 2.3 Automated Response System
+
+**Development Focus:**
+- Automated response generation
+- Response template system
+- Dynamic response customization
+- Response quality assurance
+- Automated response logging
+
+**Key Features:**
+- Instant automated responses
+- Template-based responses
+- Dynamic content insertion
+- Response personalization
+- Response analytics
+
+**Technical Implementation:**
+- Response generation engine
+- Template system
+- Response rendering
+- Response queue management
+- Response tracking and logging
+
+#### 2.4 Continuous Learning
+
+**Development Focus:**
+- Interaction logging system
+- Learning from user feedback
+- Response improvement algorithms
+- Pattern recognition
+- Model retraining pipeline
+
+**Key Features:**
+- Learning from interactions
+- Feedback collection
+- Automatic improvement
+- Pattern recognition
+- Model updates
+
+**Technical Implementation:**
+- Interaction logging system
+- Feedback collection mechanism
+- Machine learning pipeline
+- Model retraining system
+- A/B testing framework
+
+**Phase 2 Deliverables:**
+- Complete knowledge base system
+- AI-powered query recognition
+- Automated response system
+- Multi-language support
+- Continuous learning capabilities
+
+### Phase 3: Intelligence - Intent Classification
+
+**Objective**: Add intelligent message classification and prioritization
+
+#### 3.1 Intent Classification Engine
+
+**Development Focus:**
+- Intent classification models
+- Message analysis algorithms
+- Intent categorization system
+- Primary and secondary intent detection
+- Confidence scoring system
+
+**Key Features:**
+- Automatic intent classification
+- Multi-intent recognition
+- Intent categories (sales, support, service, information)
+- Confidence scores
+- Intent-based routing
+
+**Technical Implementation:**
+- NLP models for intent classification
+- Classification algorithms
+- Intent taxonomy
+- Confidence calculation
+- Classification API
+
+#### 3.2 Urgency Assessment
+
+**Development Focus:**
+- Urgency detection algorithms
+- Priority scoring system
+- Urgency indicators
+- Priority queue management
+- Urgency-based routing
+
+**Key Features:**
+- Automatic urgency detection
+- Priority levels (low, medium, high)
+- Urgency indicators
+- Priority-based queue
+- Urgency alerts
+
+**Technical Implementation:**
+- Urgency detection models
+- Priority scoring algorithms
+- Queue management system
+- Alert system
+- Priority routing logic
+
+#### 3.3 Contextual Automation
+
+**Development Focus:**
+- Context-aware automation
+- Intent-based workflows
+- Automated routing system
+- Context preservation
+- Workflow automation
+
+**Key Features:**
+- Context-aware responses
+- Intent-based automation
+- Automated routing
+- Workflow triggers
+- Context preservation
+
+**Technical Implementation:**
+- Workflow engine
+- Rule-based automation
+- Context management
+- Trigger system
+- Automation API
+
+**Phase 3 Deliverables:**
+- Intent classification system
+- Urgency assessment
+- Contextual automation
+- Priority-based routing
+- Workflow automation
+
+### Phase 4: Insights - Sentiment Analysis
+
+**Objective**: Add sentiment analysis for proactive customer service
+
+#### 4.1 Sentiment Analysis Engine
+
+**Development Focus:**
+- Sentiment analysis models
+- Emotion detection algorithms
+- Sentiment scoring system
+- Multi-language sentiment analysis
+- Real-time sentiment processing
+
+**Key Features:**
+- Real-time sentiment detection
+- Emotion identification
+- Sentiment scoring (-1 to +1)
+- Multi-language support
+- Confidence scoring
+
+**Technical Implementation:**
+- Sentiment analysis models
+- Emotion detection algorithms
+- Sentiment scoring system
+- Language-specific models
+- Real-time processing pipeline
+
+#### 4.2 Priority Alerts
+
+**Development Focus:**
+- Alert system for negative sentiments
+- Priority alert triggers
+- Alert notification system
+- Escalation workflows
+- Alert management interface
+
+**Key Features:**
+- Automatic priority alerts
+- Negative sentiment detection
+- Alert notifications
+- Escalation workflows
+- Alert management
+
+**Technical Implementation:**
+- Alert system
+- Notification service
+- Escalation workflows
+- Alert management API
+- Notification channels
+
+#### 4.3 Sentiment Analytics
+
+**Development Focus:**
+- Sentiment trend analysis
+- Sentiment distribution tracking
+- Customer satisfaction metrics
+- Sentiment reporting
+- Analytics dashboard
+
+**Key Features:**
+- Sentiment trends
+- Distribution charts
+- Satisfaction metrics
+- Sentiment reports
+- Analytics dashboard
+
+**Technical Implementation:**
+- Analytics engine
+- Data aggregation
+- Trend analysis
+- Reporting system
+- Dashboard API
+
+**Phase 4 Deliverables:**
+- Sentiment analysis system
+- Priority alerts
+- Sentiment analytics
+- Customer satisfaction tracking
+- Proactive service capabilities
+
+### Phase 5: Marketing - Email Marketing & Segmentation
+
+**Objective**: Add marketing automation and customer segmentation
+
+#### 5.1 Customer Segmentation
+
+**Development Focus:**
+- Segmentation algorithms
+- Customer behavior analysis
+- Segmentation criteria
+- Dynamic segmentation
+- Segmentation management
+
+**Key Features:**
+- Automatic customer segmentation
+- Behavior-based segmentation
+- Dynamic segments
+- Segment management
+- Segment analytics
+
+**Technical Implementation:**
+- Segmentation engine
+- Behavior analysis algorithms
+- Segment storage
+- Segment management API
+- Segmentation rules
+
+#### 5.2 Email Marketing System
+
+**Development Focus:**
+- Email campaign management
+- Email template system
+- Campaign scheduling
+- Email delivery system
+- Campaign analytics
+
+**Key Features:**
+- Campaign creation
+- Email templates
+- Scheduled campaigns
+- Email delivery
+- Campaign performance tracking
+
+**Technical Implementation:**
+- Email service integration
+- Template system
+- Campaign management API
+- Email delivery service
+- Analytics system
+
+#### 5.3 Campaign Analytics
+
+**Development Focus:**
+- Campaign performance metrics
+- Open rate tracking
+- Click-through rate tracking
+- Conversion tracking
+- ROI calculation
+
+**Key Features:**
+- Performance metrics
+- Open rates
+- Click-through rates
+- Conversion rates
+- ROI tracking
+
+**Technical Implementation:**
+- Analytics system
+- Metric tracking
+- Reporting system
+- Dashboard integration
+- Analytics API
+
+**Phase 5 Deliverables:**
+- Customer segmentation system
+- Email marketing platform
+- Campaign management
+- Campaign analytics
+- Marketing automation
+
+### Phase 6: Analytics - Analytics Dashboard
+
+**Objective**: Add comprehensive analytics and insights
+
+#### 6.1 Analytics Engine
+
+**Development Focus:**
+- Data aggregation system
+- Analytics calculation engine
+- Real-time analytics
+- Historical data analysis
+- Analytics API
+
+**Key Features:**
+- Comprehensive analytics
+- Real-time metrics
+- Historical trends
+- Data aggregation
+- Analytics API
+
+**Technical Implementation:**
+- Analytics engine
+- Data aggregation system
+- Calculation engine
+- Time-series database
+- Analytics API
+
+#### 6.2 Dashboard Interface
+
+**Development Focus:**
+- Dashboard UI/UX
+- Interactive charts and graphs
+- Customizable dashboards
+- Real-time updates
+- Export capabilities
+
+**Key Features:**
+- Interactive dashboard
+- Customizable views
+- Real-time updates
+- Chart visualizations
+- Data export
+
+**Technical Implementation:**
+- Dashboard frontend
+- Chart libraries
+- Real-time updates
+- Export functionality
+- Dashboard API
+
+#### 6.3 Reporting System
+
+**Development Focus:**
+- Report generation
+- Scheduled reports
+- Custom report builder
+- Report templates
+- Report distribution
+
+**Key Features:**
+- Automated reports
+- Custom reports
+- Scheduled reports
+- Report templates
+- Report distribution
+
+**Technical Implementation:**
+- Report generation engine
+- Template system
+- Scheduling system
+- Distribution system
+- Report API
+
+**Phase 6 Deliverables:**
+- Comprehensive analytics dashboard
+- Real-time metrics
+- Historical analytics
+- Reporting system
+- Data visualization
+
+## Development Dependencies
+
+### Dependency Graph
+
+```
+Phase 1: Unified Inbox
+  ├── Foundation for all other phases
+  └── Required for message ingestion
+
+Phase 2: Knowledge Base
+  ├── Depends on: Phase 1 (Unified Inbox)
+  └── Requires: Message data from inbox
+
+Phase 3: Intent Classification
+  ├── Depends on: Phase 1 (Unified Inbox)
+  └── Requires: Message data for classification
+
+Phase 4: Sentiment Analysis
+  ├── Depends on: Phase 1 (Unified Inbox)
+  ├── Can leverage: Phase 3 (Intent Classification)
+  └── Requires: Message data for analysis
+
+Phase 5: Email Marketing
+  ├── Depends on: Phase 1 (Unified Inbox)
+  ├── Can leverage: Phase 3 (Intent Classification)
+  ├── Can leverage: Phase 4 (Sentiment Analysis)
+  └── Requires: Customer data and segmentation
+
+Phase 6: Analytics Dashboard
+  ├── Depends on: All previous phases
+  └── Requires: Data from all modules
+```
+
+### Critical Path
+
+The critical path for development is:
+
+1. **Phase 1** (Unified Inbox) - Must be completed first
+2. **Phase 2** (Knowledge Base) - Can be developed in parallel with Phase 3
+3. **Phase 3** (Intent Classification) - Can be developed in parallel with Phase 2
+4. **Phase 4** (Sentiment Analysis) - Depends on Phase 1, benefits from Phase 3
+5. **Phase 5** (Email Marketing) - Depends on Phase 1, benefits from Phases 3 & 4
+6. **Phase 6** (Analytics Dashboard) - Depends on all previous phases
+
+## Technical Considerations
+
+### Infrastructure
+
+- **Scalability**: Each phase must be designed for scalability
+- **Performance**: Real-time processing requirements increase with each phase
+- **Reliability**: System reliability becomes more critical as features are added
+- **Security**: Security measures must be implemented from the start
+
+### Data Management
+
+- **Data Storage**: Database design must accommodate all phases
+- **Data Processing**: Processing pipeline must handle increasing data volumes
+- **Data Analytics**: Analytics infrastructure must scale with data growth
+- **Data Privacy**: Privacy and compliance must be maintained throughout
+
+### Integration
+
+- **API Design**: APIs must be designed to support future integrations
+- **Module Communication**: Modules must communicate efficiently
+- **External Services**: External service integrations must be reliable
+- **Third-Party Tools**: Third-party tools must integrate seamlessly
+
+## Testing Strategy
+
+### Phase-Based Testing
+
+- **Unit Testing**: Each module tested independently
+- **Integration Testing**: Modules tested together as they are integrated
+- **System Testing**: Complete system tested at the end of each phase
+- **User Acceptance Testing**: Users test each phase before moving to next
+
+### Quality Assurance
+
+- **Code Quality**: Code reviews and quality checks at each phase
+- **Performance Testing**: Performance testing as features are added
+- **Security Testing**: Security testing throughout development
+- **Usability Testing**: Usability testing with real users
+
+## Deployment Strategy
+
+### Incremental Deployment
+
+- **Phase-by-Phase**: Each phase deployed independently
+- **Feature Flags**: Features can be enabled/disabled independently
+- **Rollback Capability**: Ability to rollback if issues are discovered
+- **Gradual Rollout**: Gradual rollout to users for each phase
+
+### Monitoring
+
+- **Performance Monitoring**: Monitor performance at each phase
+- **Error Tracking**: Track errors and issues at each phase
+- **User Feedback**: Collect user feedback at each phase
+- **Analytics**: Track usage and adoption at each phase
+
+## Conclusion
+
+The SQ3 platform development follows a structured, phased approach that builds from a foundational unified inbox to a comprehensive AI-powered customer engagement system. Each phase delivers value to users while building the foundation for the next phase, ensuring a smooth development process and a robust, scalable platform.
+
+By following this development breakdown, the platform evolves incrementally, with each phase adding new capabilities while maintaining system stability and user value. This approach ensures that the platform can be developed, tested, and deployed efficiently while meeting the needs of Sri Lankan SMEs.
+
+**Related Documentation:**
+- [Project Overview](/docs/project-overview) - Comprehensive platform architecture
+- [Problem Statement & Solution](/docs/problem-solution) - Problem analysis and solution overview
+- [Feature Demos](/docs) - Interactive demonstrations of all platform features
+

@@ -1,9 +1,10 @@
 ---
 title: Unified Inbox
 description: A centralized inbox that consolidates all customer messages from Facebook, Instagram, and Website into one intelligent dashboard for efficient message management.
-createdAt: 2025-01-15
-updatedAt: 2025-01-15
+createdAt: 2025-11-08
+updatedAt: 2025-11-08
 category: features
+componentName: unified-inbox-demo
 ---
 
 <ComponentPreview name="unified-inbox-demo" />
@@ -20,7 +21,7 @@ The Unified Inbox system integrates with multiple communication channels and:
 2. **Chronological View**: Displays all messages in a unified, time-ordered feed
 3. **Channel Identification**: Clearly labels each message with its source channel
 4. **Status Tracking**: Tracks message status (unread, read, replied) across all channels
-5. **Multilingual Support**: Automatically detects and translates messages in Sinhala, Tamil, and English
+5. **Multilingual Support**: Automatically detects and translates messages in Sinhala and English
 6. **Message Details**: Provides detailed view of each message with customer information and context
 
 ## Key Features
@@ -28,9 +29,22 @@ The Unified Inbox system integrates with multiple communication channels and:
 ### Multi-Channel Integration
 
 The Unified Inbox seamlessly integrates with:
+
 - **Facebook**: Direct messages and comments from Facebook pages
 - **Instagram**: Direct messages and comments from Instagram business accounts
-- **Website**: Contact form submissions and live chat messages
+- **Website**: Contact form submissions, live chat messages, and embedded widget conversations
+
+### Website Embedding
+
+SQ3 provides a seamless website embedding solution:
+
+- **Embeddable Widget**: Easy-to-integrate widget that can be embedded on any website
+- **Simple Integration**: One-line script integration for quick setup
+- **Customizable Design**: Widget design can be customized to match website branding
+- **Live Chat**: Real-time chat functionality directly on the website
+- **Contact Form Integration**: Integrates with existing website contact forms
+- **Mobile Responsive**: Fully responsive widget that works on all devices
+- **Real-Time Sync**: All website messages synchronized in real-time to unified inbox
 
 ### Real-Time Synchronization
 
@@ -47,17 +61,19 @@ Each message is clearly labeled with its source channel, allowing teams to under
 ### Status Management
 
 Messages are tracked with status indicators:
+
 - **Unread**: New messages that require attention
 - **Read**: Messages that have been viewed
 - **Replied**: Messages that have been responded to
 
 ### Multilingual Support
 
-The system automatically detects messages in Sinhala, Tamil, and English, providing translations when needed. This is particularly important for Sri Lankan SMEs serving customers in multiple languages.
+The system automatically detects messages in Sinhala and English, providing translations when needed. This is particularly important for Sri Lankan SMEs serving customers in multiple languages.
 
 ### Message Details
 
 Clicking on any message reveals detailed information including:
+
 - Customer name and information
 - Channel source
 - Full message content
@@ -70,6 +86,7 @@ Clicking on any message reveals detailed information including:
 ### Improved Efficiency
 
 - **No Platform Switching**: All messages in one place eliminates the need to switch between Facebook, Instagram, and Website
+- **Website Integration**: Seamless website embedding widget for capturing customer inquiries directly from websites
 - **Faster Response Times**: Unified view allows teams to prioritize and respond to messages more quickly
 - **Reduced Workload**: Single interface reduces cognitive load and increases productivity
 
@@ -88,9 +105,10 @@ Clicking on any message reveals detailed information including:
 ## Expected Outcomes
 
 - **60% reduction** in response time by eliminating platform switching
-- **Unified communication hub** for Facebook and Instagram interactions
+- **Unified communication hub** for Facebook, Instagram, and website interactions
 - **Improved customer satisfaction** through faster and more consistent responses
 - **Better team efficiency** with a single interface for all channels
+- **Seamless website integration** through embedding widget
 
 ## Technical Details
 
@@ -98,10 +116,41 @@ The Unified Inbox system uses:
 
 - **Facebook Graph API**: For Facebook page messages and comments
 - **Instagram Basic Display API**: For Instagram direct messages
+- **Website Embedding Widget**: JavaScript widget for website integration
+- **Website API**: RESTful API for contact form and custom integrations
 - **Webhook Integration**: For real-time message synchronization
 - **Message Queue System**: For reliable message processing
 - **Translation API**: For multilingual message support
 - **Real-time Updates**: WebSocket connections for live message updates
+
+### Website Integration Methods
+
+#### Embedding Widget
+
+The SQ3 embedding widget can be added to any website with a simple script tag:
+
+```html
+<script
+  src="https://sq3.platform.com/widget.js"
+  data-api-key="YOUR_API_KEY"
+></script>
+```
+
+The widget provides:
+
+- Live chat interface
+- Customizable appearance
+- Mobile-responsive design
+- Real-time message delivery
+
+#### Contact Form Integration
+
+SQ3 can integrate with existing website contact forms through:
+
+- API endpoints for form submissions
+- Webhook notifications
+- Email forwarding integration
+- Custom form handlers
 
 ## Integration
 
@@ -120,7 +169,7 @@ Teams can handle customer inquiries from all channels in one place, ensuring no 
 
 ### Sales Inquiries
 
-Sales teams can respond to product inquiries from Facebook, Instagram, and Website without switching platforms, improving conversion rates.
+Sales teams can respond to product inquiries from Facebook, Instagram, and Website without switching platforms, improving conversion rates. The website embedding widget captures inquiries directly from the website, ensuring no potential customer is missed.
 
 ### Order Management
 
@@ -128,5 +177,4 @@ Customer service teams can track order-related messages from all channels, provi
 
 ### Multilingual Support
 
-Teams can handle messages in Sinhala, Tamil, and English from a single interface, with automatic translation support when needed.
-
+Teams can handle messages in Sinhala and English from a single interface, with automatic translation support when needed.

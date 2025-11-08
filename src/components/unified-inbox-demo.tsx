@@ -477,7 +477,7 @@ export function UnifiedInboxDemo() {
                   },
                   {
                     icon: Languages,
-                    text: "Multilingual support (Sinhala, Tamil, English)",
+                    text: "Multilingual support (Sinhala, English)",
                   },
                 ].map((benefit, idx) => (
                   <div key={idx} className="flex items-start gap-3">

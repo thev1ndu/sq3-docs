@@ -1,0 +1,155 @@
+# SQ3 Platform - Information for LLMs
+
+## About SQ3
+
+SQ3 is a unified, AI-driven SaaS platform designed specifically for Sri Lankan Small and Medium Enterprises (SMEs) to manage customer communications across Facebook, Instagram, and websites. The platform consolidates multiple communication channels into a single intelligent inbox, automates responses through AI-powered chatbots, analyzes customer intent and sentiment, and enables data-driven marketing campaigns.
+
+## Platform Overview
+
+SQ3 provides a comprehensive solution that includes:
+- Unified inbox for Facebook, Instagram, and website communications
+- AI-powered knowledge base with automated responses
+- Intelligent intent classification
+- Real-time sentiment analysis
+- Email marketing and customer segmentation
+- Comprehensive analytics dashboard
+
+## Documentation Structure
+
+### Features Documentation
+All feature documentation and interactive demos are available at: https://next.sq3.uk/docs
+
+#### Available Features:
+1. **Unified Inbox** - `/docs/unified-inbox`
+   - Centralized inbox consolidating all customer messages from Facebook, Instagram, and Website
+   - Real-time synchronization across all channels
+   - Website embedding widget for seamless integration
+
+2. **Intent Classification** - `/docs/intent-classification`
+   - AI-powered intent classification system
+   - Automatic message categorization by intent
+   - Priority-based routing and contextual automation
+
+3. **Marketing Segmentation** - `/docs/marketing-segmentation`
+   - Customer segmentation and marketing campaign system
+   - Data-driven email marketing with customer segmentation
+   - Campaign performance metrics
+
+4. **Customer Sentiment Analyzer** - `/docs/customer-sentiment`
+   - Real-time sentiment analysis of customer messages
+   - Automatic detection of positive, negative, and neutral sentiments
+   - Priority alerts for negative sentiments
+
+5. **Appointment Booking** - `/docs/appointment-booking`
+   - AI-powered appointment booking system
+   - Automated scheduling and calendar integration
+   - Natural language understanding
+
+### Project Documentation
+Project overview and architecture documentation:
+
+1. **Project Overview** - `/docs/project-overview`
+   - Comprehensive platform architecture
+   - System components and data flows
+   - Integration points and technical details
+
+2. **Problem Statement & Solution** - `/docs/problem-solution`
+   - Challenges faced by Sri Lankan SMEs
+   - How SQ3 addresses these challenges
+   - Platform features and expected outcomes
+
+3. **Need of SQ3** - `/docs/need-of-sq3`
+   - Market context and business needs
+   - Why SQ3 is essential for SMEs
+   - Value proposition and expected impact
+
+4. **Development Breakdown** - `/docs/development-breakdown`
+   - Development phases and module dependencies
+   - Technical considerations and testing strategy
+   - Deployment strategy
+
+## Platform Modules
+
+### 1. Facebook, Instagram & Website Integration
+- Consolidated inbox for Facebook, Instagram, and website messages
+- Website embedding widget for easy integration
+- Contact form and live chat integration
+- Real-time synchronization
+- Automated replies and workflow-based actions
+
+### 2. Knowledge Base + FAQ
+- Repository of frequently asked questions
+- AI-powered query recognition
+- Instant multilingual replies (Sinhala, English)
+- Continuous learning based on interaction logs
+
+### 3. Intent Classification
+- Natural Language Processing for intent categorization
+- Primary and secondary intent detection
+- Confidence scoring and urgency assessment
+- Contextual automation and relevant responses
+
+### 4. Customer Sentiment Analyzer
+- Real-time sentiment analysis across all channels
+- Automatic detection of positive, negative, and neutral sentiments
+- Sentiment trends and analytics
+- Priority alerts for negative sentiments
+- Multilingual sentiment analysis (Sinhala, English)
+
+### 5. Email Marketing & Customer Segmentation
+- Segmentation based on message frequency, purchase patterns, and engagement
+- Targeted email campaigns
+- Performance metrics (open rates, click-throughs, conversions)
+
+## Key Technologies
+
+- **Frontend**: Next.js, React, TypeScript
+- **Backend**: Node.js, APIs
+- **AI/ML**: Natural Language Processing, Sentiment Analysis, Intent Classification
+- **Integrations**: Facebook Graph API, Instagram Basic Display API, Website Embedding
+- **Languages**: Sinhala, English support
+
+## Target Market
+
+- **Primary**: Sri Lankan Small and Medium Enterprises (SMEs)
+- **Use Cases**: Customer support, sales inquiries, marketing campaigns, customer insights
+- **Channels**: Facebook, Instagram, Websites
+
+## Expected Outcomes
+
+- 70% reduction in manual message handling
+- 60% reduction in response time
+- Unified communication hub for all channels
+- Improved customer satisfaction
+- Data-driven marketing capabilities
+
+## Important Links
+
+- **Home**: https://next.sq3.uk
+- **Documentation**: https://next.sq3.uk/docs
+- **RSS Feed**: https://next.sq3.uk/rss
+- **Sitemap**: https://next.sq3.uk/sitemap.xml
+
+## Content Categories
+
+- **Features**: Interactive demos and feature documentation (category: features)
+- **Project**: Project overview, architecture, and development documentation (category: project)
+
+## Development Phases
+
+The platform is developed in phases:
+1. Phase 1: Unified Inbox & Integrations (Facebook, Instagram, Website)
+2. Phase 2: Knowledge Base & FAQ Automation
+3. Phase 3: Intent Classification
+4. Phase 4: Sentiment Analysis
+5. Phase 5: Email Marketing & Segmentation
+6. Phase 6: Analytics Dashboard
+
+## Contact & Support
+
+For more information about SQ3 platform features, architecture, and development, refer to the comprehensive documentation available at https://next.sq3.uk/docs
+
+## Last Updated
+
+2025-11-08
+

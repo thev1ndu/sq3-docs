@@ -2,6 +2,7 @@ import {
   Brain,
   ChevronsDownUpIcon,
   ChevronsUpDownIcon,
+  Heart,
   Mail,
   MessageSquare,
   Target,
@@ -22,14 +23,15 @@ const moduleIcons = {
   "knowledge-base": Brain,
   "intent-classification": Target,
   "email-marketing": Mail,
+  "sentiment-analyzer": Heart,
 };
 
 export function ProjectScope() {
   return (
-    <Panel id="scope">
+    <Panel id="modules">
       <PanelHeader>
         <PanelTitle>
-          Scope
+          Modules
           <sup className="ml-1 font-mono text-sm text-muted-foreground select-none">
             ({PROJECT_DATA.scope.modules.length})
           </sup>
@@ -37,9 +39,6 @@ export function ProjectScope() {
       </PanelHeader>
 
       <div className="pr-2 pl-4">
-        <p className="mb-4 text-sm text-muted-foreground">
-          The platform focuses on four integrated modules:
-        </p>
 
         {PROJECT_DATA.scope.modules.map((module, index) => {
           const Icon =
@@ -55,10 +54,10 @@ export function ProjectScope() {
                   <div className="flex-1 border-l border-dashed border-edge">
                     <CollapsibleTrigger className="group/module flex w-full items-center gap-4 p-4 pr-2 text-left select-none">
                       <div className="flex-1">
-                        <h3 className="mb-1 leading-snug font-medium text-balance">
+                        <h3 className="mb-1 leading-snug font-medium text-balance font-sans">
                           {module.title}
                         </h3>
-                        <p className="line-clamp-2 text-sm text-muted-foreground">
+                        <p className="line-clamp-2 text-sm text-muted-foreground font-mono">
                           {module.description}
                         </p>
                       </div>
@@ -77,12 +76,12 @@ export function ProjectScope() {
                 <CollapsibleContent className="overflow-hidden duration-300 data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
                   <div className="space-y-3 border-t border-dashed border-edge p-4">
                     <div>
-                      <p className="mb-3 text-sm font-medium">Key Features</p>
+                      <p className="mb-3 text-sm font-medium font-sans">Key Features</p>
                       <ul className="space-y-2">
                         {module.features.map((feature, featureIndex) => (
                           <li
                             key={featureIndex}
-                            className="flex items-baseline gap-3 text-sm"
+                            className="flex items-baseline gap-3 text-sm font-mono"
                           >
                             <span className="text-muted-foreground">•</span>
                             <span className="leading-relaxed text-muted-foreground">

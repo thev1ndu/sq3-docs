@@ -200,4 +200,14 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(() => import("@/components/appointment-booking-demo").then(mod => ({ default: mod.AppointmentBookingDemo }))),
   },
+  "customer-sentiment-demo": {
+    name: "customer-sentiment-demo",
+    description: "Interactive demo of AI-powered customer sentiment analysis system",
+    type: "registry:example",
+    files: [{
+      path: "src/components/customer-sentiment-demo.tsx",
+      type: "registry:example",
+    }],
+    component: React.lazy(() => import("@/components/customer-sentiment-demo").then(mod => ({ default: mod.CustomerSentimentDemo }))),
+  },
 }

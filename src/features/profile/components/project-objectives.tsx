@@ -28,8 +28,8 @@ export function ProjectObjectives() {
               <div className="flex items-center gap-3">
                 <Target className="size-5 text-muted-foreground" />
                 <div>
-                  <h4 className="font-medium">Project Goals</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <h4 className="font-medium font-sans">Project Goals</h4>
+                  <p className="text-sm text-muted-foreground font-mono">
                     {PROJECT_DATA.objectives.length} primary objectives
                   </p>
                 </div>
@@ -47,7 +47,7 @@ export function ProjectObjectives() {
                     <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-muted text-sm font-medium text-muted-foreground">
                       {index + 1}
                     </span>
-                    <span className="text-foreground">{objective}</span>
+                    <span className="text-foreground font-mono text-sm">{objective}</span>
                   </div>
                 ))}
               </div>
