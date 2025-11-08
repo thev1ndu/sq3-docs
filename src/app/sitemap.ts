@@ -2,18 +2,54 @@ import dayjs from "dayjs";
 import type { MetadataRoute } from "next";
 
 import { SITE_INFO } from "@/config/site";
-import { getAllPosts } from "@/features/blog/data/posts";
+import { getAllPosts, getPostsByCategory } from "@/features/blog/data/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts().map((post) => ({
+  const allPosts = getAllPosts();
+  const featurePosts = getPostsByCategory("features");
+  const projectPosts = getPostsByCategory("project");
+
+  // Main pages with high priority
+  const mainPages: MetadataRoute.Sitemap = [
+    {
+      url: SITE_INFO.url,
+      lastModified: dayjs().toISOString(),
+      changeFrequency: "weekly",
+      priority: 1.0,
+    },
+    {
+      url: `${SITE_INFO.url}/docs`,
+      lastModified: dayjs().toISOString(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+  ];
+
+  // Feature documentation pages (high priority)
+  const featurePages: MetadataRoute.Sitemap = featurePosts.map((post) => ({
     url: `${SITE_INFO.url}/docs/${post.slug}`,
-    lastModified: dayjs(post.metadata.updatedAt).toISOString(),
+    lastModified: dayjs(post.metadata.updatedAt || post.metadata.createdAt).toISOString(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
   }));
 
-  const routes = ["", "/docs"].map((route) => ({
-    url: `${SITE_INFO.url}${route}`,
-    lastModified: dayjs().toISOString(),
+  // Project documentation pages (high priority)
+  const projectPages: MetadataRoute.Sitemap = projectPosts.map((post) => ({
+    url: `${SITE_INFO.url}/docs/${post.slug}`,
+    lastModified: dayjs(post.metadata.updatedAt || post.metadata.createdAt).toISOString(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
   }));
 
-  return [...routes, ...posts];
+  // Additional important pages
+  const additionalPages: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_INFO.url}/rss`,
+      lastModified: dayjs().toISOString(),
+      changeFrequency: "daily" as const,
+      priority: 0.5,
+    },
+  ];
+
+  return [...mainPages, ...featurePages, ...projectPages, ...additionalPages];
 }

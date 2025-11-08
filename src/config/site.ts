@@ -5,18 +5,22 @@ export const SITE_INFO = {
   url: process.env.APP_URL || "https://next.sq3.uk",
   ogImage: "/og-image.png",
   description:
-    "Unified, AI-driven SaaS platform that simplifies customer engagement, automates responses, and enhances marketing outcomes within the Meta ecosystem for Sri Lankan SMEs.",
+    "Unified, AI-driven SaaS platform that simplifies customer engagement, automates responses, and enhances marketing outcomes across Facebook, Instagram, and websites for Sri Lankan SMEs.",
   keywords: [
     "SQ3",
     "chatbot",
     "SaaS",
     "Facebook",
     "Instagram",
+    "website integration",
     "customer engagement",
     "AI",
+    "sentiment analysis",
+    "intent classification",
     "Sri Lanka",
     "SME",
     "marketing automation",
+    "unified inbox",
   ],
 };
 
