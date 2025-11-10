@@ -2,7 +2,7 @@ import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
   name: "SQ3",
-  url: process.env.APP_URL || "https://next.sq3.uk",
+  url: process.env.APP_URL || "https://sq3.us",
   ogImage: "/og-image.png",
   description:
     "SQ3 is a unified platform that brings all your customer messages from Facebook, Instagram, and your website into one place, and helps you respond to them faster and smarter. Designed specifically for Sri Lankan SMEs.",
