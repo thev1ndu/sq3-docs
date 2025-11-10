@@ -2,7 +2,7 @@ import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
   name: "SQ3",
-  title: "SQ3 - Unified Customer Messaging Platform for Sri Lankan SMEs",
+  title: "SQ3",
   shortName: "SQ3",
   tagline: "Unified Customer Messaging Platform for Sri Lankan SMEs",
   url: process.env.APP_URL || "https://sq3.us",
