@@ -4,7 +4,7 @@ export const SITE_INFO = {
   name: "SQ3",
   title: "SQ3",
   shortName: "SQ3",
-  tagline: "Unified Customer Messaging Platform for Sri Lankan SMEs",
+  tagline: "AI-powered unified customer messaging platform",
   url: process.env.APP_URL || "https://sq3.us",
   ogImage: "/og-image.png",
   description:
@@ -14,6 +14,9 @@ export const SITE_INFO = {
   keywords: [
     // Primary keywords
     "SQ3",
+    "sq3",
+    "Sq3",
+    "sQ3",
     "unified inbox",
     "customer messaging platform",
     "customer engagement",
@@ -38,6 +41,7 @@ export const SITE_INFO = {
     "small and medium enterprises",
     "SME software",
     "Sri Lankan businesses",
+    "CRM",
     // Business type
     "SaaS",
     "software as a service",
