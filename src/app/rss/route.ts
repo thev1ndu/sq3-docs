@@ -42,13 +42,17 @@ export function GET() {
     .join("\n");
 
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
-  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
       <title>Documentation | ${SITE_INFO.name}</title>
       <link>${SITE_INFO.url}/docs</link>
       <description>${escapeXml(SITE_INFO.description)}</description>
-      <language>en-us</language>
+      <language>${SITE_INFO.language}</language>
       <lastBuildDate>${lastBuildDate}</lastBuildDate>
+      <generator>Next.js</generator>
+      <managingEditor>${SITE_INFO.contact.email} (${SITE_INFO.author.name})</managingEditor>
+      <webMaster>${SITE_INFO.contact.email} (${SITE_INFO.author.name})</webMaster>
+      <category>${SITE_INFO.category}</category>
       <atom:link href="${SITE_INFO.url}/rss" rel="self" type="application/rss+xml" />
       ${itemsXml}
     </channel>

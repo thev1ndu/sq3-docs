@@ -2,10 +2,9 @@ import dayjs from "dayjs";
 import type { MetadataRoute } from "next";
 
 import { SITE_INFO } from "@/config/site";
-import { getAllPosts, getPostsByCategory } from "@/features/blog/data/posts";
+import { getPostsByCategory } from "@/features/blog/data/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const allPosts = getAllPosts();
   const featurePosts = getPostsByCategory("features");
   const projectPosts = getPostsByCategory("project");
 
