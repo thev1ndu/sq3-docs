@@ -20,11 +20,7 @@ const usefulnessLabels: Record<string, string> = {
   "5": "Extremely useful",
 };
 
-export function SurveyQuestionItem({
-  description,
-  data,
-  questionKey,
-}: Props) {
+export function SurveyQuestionItem({ description, data, questionKey }: Props) {
   if (!data.length) return null;
 
   const total = data.reduce((sum, item) => sum + item.value, 0);

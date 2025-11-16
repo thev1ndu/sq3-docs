@@ -7,11 +7,11 @@ export function SiteFooter() {
           Developed by{" "}
           <a
             className="link"
-            href="https://github.com/thev1ndu"
+            href="https://linkedin.com/company/sequence3"
             target="_blank"
             rel="noopener"
           >
-            CS-22
+            Sequence3®
           </a>
         </p>
       </div>
