@@ -37,22 +37,26 @@ const surveyQuestions: Array<{
   {
     key: "hiddenDropouts",
     title: "",
-    description: "In the last 3 months, how many times did you quietly give up on buying something because of slow, confusing, or missing replies from a business on Instagram or Facebook?",
+    description:
+      "In the last 3 months, how many times did you quietly give up on buying something because of slow, confusing, or missing replies from a business on Instagram or Facebook?",
   },
   {
     key: "lostMessages",
     title: "",
-    description: "How often important messages like complaints, refund requests, or discount questions get ignored",
+    description:
+      "How often important messages like complaints, refund requests, or discount questions get ignored",
   },
   {
     key: "languageEmotion",
     title: "",
-    description: "Impact of language and tone on customer experience (e.g., preferring Sinhala but receiving rough English, or cold robotic replies)",
+    description:
+      "Impact of language and tone on customer experience (for example, preferring Sinhala but receiving rough English, or cold robotic replies)",
   },
   {
     key: "sq3Usefulness",
     title: "",
-    description: "Usefulness of a smart assistant that replies instantly in Sinhala or English, provides accurate info, notices confusion, and escalates to real staff for refunds/returns/discounts",
+    description:
+      "Usefulness of a smart assistant that replies instantly in Sinhala or English, provides accurate info, notices confusion, and escalates to real staff for refunds, returns, and discounts",
   },
 ];
 
@@ -90,21 +94,24 @@ export default function SurveyPage() {
 
       <div className="screen-line-after p-4">
         <p className="font-mono text-sm text-balance text-muted-foreground">
-          Insights from our user survey on customer messaging challenges and SQ3's impact
+          Insights from our user survey on customer messaging challenges and SQ3
+          impact
           {data && ` · ${data.totalResponses} responses`}
         </p>
       </div>
 
       {loading ? (
         <div className="screen-line-after p-4">
-          <p className="font-mono text-sm text-muted-foreground">Loading survey data...</p>
+          <p className="font-mono text-sm text-muted-foreground">
+            Loading survey data…
+          </p>
         </div>
       ) : data ? (
         <div className="screen-line-after">
           <div className="relative pt-4 pb-8">
             <div className="absolute inset-0 -z-1 grid grid-cols-1 gap-4 max-sm:hidden sm:grid-cols-2">
-              <div className="border-r border-edge"></div>
-              <div className="border-l border-edge"></div>
+              <div className="border-r border-edge" />
+              <div className="border-l border-edge" />
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -127,7 +134,7 @@ export default function SurveyPage() {
 
       {data && (
         <div className="p-4">
-          <p className="font-mono text-xs text-center text-muted-foreground">
+          <p className="text-center font-mono text-xs text-muted-foreground">
             Updated {new Date(data.lastUpdated).toLocaleString()}
           </p>
         </div>
