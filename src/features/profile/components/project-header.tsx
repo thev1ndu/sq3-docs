@@ -1,10 +1,9 @@
 import Image from "next/image";
 
 import { Prose } from "@/components/ui/typography";
-import { SITE_INFO } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel";
-import { cn } from "@/lib/utils";
 
 export function ProjectHeader() {
   return (

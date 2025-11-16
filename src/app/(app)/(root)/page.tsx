@@ -3,11 +3,11 @@ import type { WebPage, WithContext } from "schema-dts";
 import { SITE_INFO } from "@/config/site";
 import { ProjectHeader } from "@/features/profile/components/project-header";
 import { ProjectIntroduction } from "@/features/profile/components/project-introduction";
-import { ProjectObjectives } from "@/features/profile/components/project-objectives";
-import { ProjectOutcomes } from "@/features/profile/components/project-outcomes";
-import { ProjectProblem } from "@/features/profile/components/project-problem";
-import { ProjectScope } from "@/features/profile/components/project-scope";
-import { ProjectSolution } from "@/features/profile/components/project-solution";
+// import { ProjectObjectives } from "@/features/profile/components/project-objectives";
+// import { ProjectOutcomes } from "@/features/profile/components/project-outcomes";
+// import { ProjectProblem } from "@/features/profile/components/project-problem";
+// import { ProjectScope } from "@/features/profile/components/project-scope";
+// import { ProjectSolution } from "@/features/profile/components/project-solution";
 import { cn } from "@/lib/utils";
 
 export default function Page() {

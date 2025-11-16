@@ -2,7 +2,7 @@ import { Markdown } from "@/components/markdown";
 import { Prose } from "@/components/ui/typography";
 import { PROJECT_DATA } from "@/features/profile/data/project";
 
-import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel";
+import { Panel, PanelContent } from "./panel";
 
 export function ProjectIntroduction() {
   return (

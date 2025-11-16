@@ -83,7 +83,8 @@ export const SITE_INFO = {
   },
   // SEO metadata
   seo: {
-    defaultTitle: "SQ3 - Transform your Customer Experience",
+    defaultTitle:
+      "SQ3 - Unified Customer Messaging Platform for Sri Lankan SMEs",
     titleTemplate: "%s | SQ3",
     defaultDescription:
       "SQ3 is a unified platform that brings all your customer messages from Facebook, Instagram, and your website into one place, and helps you respond to them faster and smarter. Designed specifically for Sri Lankan SMEs.",
@@ -164,7 +165,7 @@ export const SEO_CONFIG = {
 
 export const MAIN_NAV: NavItem[] = [
   {
-    title: "Home",
+    title: "Project",
     href: "/",
   },
   {
@@ -178,7 +179,7 @@ export const MAIN_NAV: NavItem[] = [
 ];
 
 export const UTM_PARAMS = {
-  utm_source: "sq3.us",
+  utm_source: "sq3.thevinduw.de",
   utm_medium: "project_website",
   utm_campaign: "referral",
 };
