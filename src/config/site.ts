@@ -172,6 +172,10 @@ export const MAIN_NAV: NavItem[] = [
     title: "Docs",
     href: "/docs",
   },
+  {
+    title: "Survey",
+    href: "/survey",
+  },
 ];
 
 export const UTM_PARAMS = {

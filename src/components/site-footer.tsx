@@ -2,40 +2,6 @@ export function SiteFooter() {
   return (
     <footer className="max-w-screen overflow-x-hidden px-3 sm:px-4">
       <div className="screen-line-before mx-auto pt-5 sm:pt-6 md:max-w-3xl md:border-x md:border-edge">
-        {/* Attribution */}
-        {/* <p
-          className="
-            mb-2 px-4
-            flex flex-wrap items-center justify-center gap-2
-            text-center font-mono text-xs sm:text-sm leading-relaxed text-muted-foreground
-            break-words [overflow-wrap:anywhere] whitespace-normal
-          "
-        >
-          <span>Crafted with</span>
-          <Heart
-            className="h-4 w-4 text-red-500 animate-pulse"
-            aria-hidden="true"
-          />
-          <span>and coffee — powered by</span>
-          <a
-            href="https://tailwindcss.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            TailwindCSS
-          </a>
-          <span>&</span>
-          <a
-            href="https://ui.shadcn.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            shadcn/ui
-          </a>
-        </p> */}
-
         {/* Author credit */}
         <p className="mb-6 px-4 text-center font-mono text-xs [overflow-wrap:anywhere] break-words text-muted-foreground sm:text-sm">
           Developed by{" "}
@@ -45,7 +11,7 @@ export function SiteFooter() {
             target="_blank"
             rel="noopener"
           >
-            Thevindu W.
+            CS-22
           </a>
         </p>
       </div>

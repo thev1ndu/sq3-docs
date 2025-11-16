@@ -42,6 +42,10 @@ const MENU_LINKS: CommandLinkItem[] = [
     title: "Docs",
     href: "/docs",
   },
+  {
+    title: "Survey",
+    href: "/survey",
+  },
 ];
 
 const PROJECT_LINKS: CommandLinkItem[] = [
