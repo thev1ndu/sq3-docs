@@ -7,9 +7,9 @@ import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel";
 export function ProjectIntroduction() {
   return (
     <Panel id="introduction">
-      <PanelHeader>
+      {/* <PanelHeader>
         <PanelTitle>Introduction</PanelTitle>
-      </PanelHeader>
+      </PanelHeader> */}
 
       <PanelContent className="space-y-4">
         <Prose>
@@ -22,4 +22,3 @@ export function ProjectIntroduction() {
     </Panel>
   );
 }
-

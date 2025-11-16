@@ -27,7 +27,7 @@ export default function Page() {
         <ProjectIntroduction />
         <Separator />
 
-        <ProjectProblem />
+        {/* <ProjectProblem />
         <Separator />
 
         <ProjectSolution />
@@ -40,7 +40,7 @@ export default function Page() {
         <Separator />
 
         <ProjectOutcomes />
-        <Separator />
+        <Separator /> */}
       </div>
     </>
   );

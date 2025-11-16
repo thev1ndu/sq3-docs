@@ -164,7 +164,7 @@ export const SEO_CONFIG = {
 
 export const MAIN_NAV: NavItem[] = [
   {
-    title: "Project",
+    title: "Home",
     href: "/",
   },
   {
@@ -178,7 +178,7 @@ export const MAIN_NAV: NavItem[] = [
 ];
 
 export const UTM_PARAMS = {
-  utm_source: "sq3.thevinduw.de",
+  utm_source: "sq3.us",
   utm_medium: "project_website",
   utm_campaign: "referral",
 };
