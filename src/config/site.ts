@@ -165,7 +165,7 @@ export const SEO_CONFIG = {
 
 export const MAIN_NAV: NavItem[] = [
   {
-    title: "Project",
+    title: "Home",
     href: "/",
   },
   {
