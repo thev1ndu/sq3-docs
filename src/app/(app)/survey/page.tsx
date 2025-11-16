@@ -44,7 +44,7 @@ const surveyQuestions: Array<{
     key: "lostMessages",
     title: "",
     description:
-      "How often important messages like complaints, refund requests, or discount questions get ignored",
+      "How often important messages like complaints, refund requests, or discount questions go unanswered",
   },
   {
     key: "languageEmotion",
